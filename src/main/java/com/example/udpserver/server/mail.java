@@ -46,7 +46,7 @@ public class mail {
             message.saveChanges();
             Transport transport = session.getTransport("smtp");
             //或者为企业邮箱和密码
-            transport.connect("smtp.qq.com", 465,"721743425@qq.com", "odddknobsyibbddc");
+            transport.connect("smtp.qq.com", 465,"721743425@qq.com", "密码");
             transport.sendMessage(message, message.getAllRecipients());
             transport.close();
         } catch (Exception e) {
